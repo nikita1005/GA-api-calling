@@ -14,7 +14,8 @@ function App() {
   useEffect(() => {
     ReactGA.initialize('UA-190105874-1');
     // To Report Page View 
-    ReactGA.pageview('/');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+    // ReactGA.pageview('/');
   }, [])
 
   useEffect(() => {
